@@ -51,10 +51,11 @@
 
             bindings = <
             &trans    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_N7 &kp KP_N8  &kp KP_N9 &kp KP_N0  &kp KP_MINUS &KP_PLUS &trans  &kp KP_MULTIPLY
-&kp BT_CLR  &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans     &trans    &trans     &trans       &trans   &trans  &kp KP_DIVIDE
+&trans      &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans     &trans    &trans     &trans       &trans   &trans  &kp KP_DIVIDE
 &tog 2      &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans     &trans    &trans     &trans                &trans  &kp KP_DOT
 &trans      &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans     &trans    &trans     &trans       &trans   &kp RET &kp KP_EQUAL
 &trans      &trans    &trans    &trans                        &trans                        &trans     &trans    &trans     &trans                &trans  &trans
+            >;
         };
     };
 };
