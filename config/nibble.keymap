@@ -44,7 +44,7 @@
 &trans      &trans    &trans    &trans                        &trans                        &trans  &trans    &trans    &kp C_PREV          &kp C_PP &kp C_NEXT
             >;
         };
-        function_layer {
+        numpad_layer {
             display_name = "#num";
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
