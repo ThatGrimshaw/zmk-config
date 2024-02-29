@@ -9,6 +9,14 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        bt_encoder: bt_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&bt BT_NXT>, <&bt BT_PRV>;
+        };
+    };
+
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder_1>;
@@ -32,7 +40,7 @@
 
         function_layer {
             display-name = "Function";
-            sensor-bindings = <&inc_dec_kp BT_NXT BT_PRV>;
+            sensor-bindings = <&bt_encoder>;
             bindings = <
             &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11     &kp F12  &trans    &trans
 &bt BT_CLR  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans      &trans   &trans    &bootloader
